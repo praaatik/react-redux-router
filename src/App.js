@@ -10,10 +10,11 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route index element={<Home />} />
-        <Route path="/:id" element={<SingleArticle />} />
-        {/* <React path="*" element={NotFoundPage} /> */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/:id" element={<SingleArticle />} />
+          {/* <React path="*" element={NotFoundPage} /> */}
+        </Route>
       </Routes>
     </div>
   );
